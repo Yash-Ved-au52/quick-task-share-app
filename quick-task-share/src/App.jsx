@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { DragDropContext } from "@hello-pangea/dnd";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+
 import TaskInput from "./components/TaskInput";
 import TaskList from "./components/TaskList";
 import TaskView from "./components/TaskView";
