@@ -1,6 +1,9 @@
 {
     "rewrites": [
       { "source": "/tasks/:id", "destination": "/index.html" }
+    ],
+    "redirects": [
+      { "source": "/tasks/:id", "destination": "/tasks/:id", "statusCode": 200 }
     ]
   }
   
