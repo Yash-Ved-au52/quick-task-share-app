@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/tasks';
+const API_URL =  import.meta.env.VITE_BACKEND_API;
 
 export const createTaskList = async (tasks) => {
   const response = await axios.post(API_URL, { tasks });

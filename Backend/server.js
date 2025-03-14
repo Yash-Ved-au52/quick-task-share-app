@@ -4,7 +4,10 @@ const cors = require('cors');
 const app = express();
 require('dotenv').config();
 
-app.use(cors());
+app.use(cors({
+  origin: ['http://localhost:5173', 'https://quick-task-share.vercel.app/'], // Allow requests from these origins
+  credentials: true // Include credentials (cookies) in cross-origin requests
+}));
 app.use(express.json());
 
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
