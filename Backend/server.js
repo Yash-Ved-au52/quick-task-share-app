@@ -8,7 +8,7 @@ const app = express();
 
 //CORS Configuration
 app.use(cors({
-  origin: ["http://localhost:5173", "https://quick-task-share.vercel.app"],
+  origin: ["http://localhost:5173", "https://quick-task-share-app.vercel.app"],
   methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: ["Content-Type"]
 }));
